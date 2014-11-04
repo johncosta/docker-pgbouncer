@@ -15,7 +15,7 @@ This allows for encrypted Postgres traffic into and out of the container.
 ## Usage
 
 ```
-docker run --name pgbnc0 -e "POSTGRES_URL=..." pgbnc-ha
+docker run --name pgbnc0 -e "POSTGRES_URL=..." docker-pgbouncer
 ```
 
 ## Required Environment Variables
