@@ -4,13 +4,13 @@ Creates a container running `pgbouncer` and `stunnel`.
 
 The traffic flow is:
 
- * Ingress on `:5432` to stunnel
- * Into pgbouncer on `:6000`
- * Back into stunnel, egressing to your defined `POSTGRES_URL`
+ * Ingress on `:5432` to `stunnel`
+ * Into `pgbouncer` on `:6000`
+ * Back into `stunnel`, egressing to your defined `POSTGRES_URL`
 
 This allows for encrypted Postgres traffic into and out of the container.
 
-`stunnel` and `pgbouncer` are both managed by a supervisord process in the container.
+`stunnel` and `pgbouncer` are both managed by a `supervisord` process in the container.
 
 ## Usage
 
