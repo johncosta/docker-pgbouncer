@@ -25,3 +25,7 @@ docker run --name pgbnc0 -e "POSTGRES_URL=..." pgbnc-ha
 ```
 POSTGRES_URL=postgres://user:password@host:port/database
 ```
+
+## Constraints
+
+This container only supports a single upstream database.
